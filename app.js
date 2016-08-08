@@ -9,10 +9,10 @@ app.set('port', (process.env.PORT || 5000))
 app.use(bodyParser.urlencoded({extended:false}))
 
 //process app JSON
-app.use(bodyParser().json())
+app.use(bodyParser.json())
 
 app.get('/', function(req, res){
-  res.send("Hello world, I am NewEgg")
+  res.send("Hello world, I am NestEgg")
 })
 
 app.get('/webhook/', function(req, res){
